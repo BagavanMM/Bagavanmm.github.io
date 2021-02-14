@@ -1,0 +1,64 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+       MEDIA SCREENS
+-------------------------*/
+@media (min-width: 992px) and (max-width: 1199px){
+    .navbar-brand {
+        width: 120px;
+    }
+}
+@media (max-width: 991px){
+    body{
+        padding-top: 63px;
+    }
+    .full-screen{
+        height: calc(100vh - 63px);
+    }
+    .header {
+        background-color: $bg-white;
+        padding: 0;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+    .header button span{
+        color: $black;
+    }
+    .header nav li a, .header nav a.navbar-brand {
+        color: $black-2;
+    }
+    .hero .hero-center{
+        transform: translateY(0);
+    }
+    .hero.page-hero .hero-center{
+        transform: translateY(-50%);
+    }
+    #my-map{
+        height: 400px;
+    }
+}
+@media (max-width: 767px){
+    h1{
+        font-size: $font-size-h !important;
+    }
+    .count-item:not(:last-child){
+        border: none;
+    }
+    .p-title-border{
+        border-right: none;
+        border-left: none;
+    }
+}
+@media (max-width: 576px) {
+    .comments img {
+        width: 85px;
+    }
+    .comment-info {
+        margin-left: 100px;
+    }
+    #message.toast {
+        top: 18px;
+        left: inherit;
+        font-size: $f-s-12;
+        padding: 3px 0;
+    }
+}

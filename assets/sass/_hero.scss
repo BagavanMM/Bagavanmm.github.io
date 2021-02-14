@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+          HERO
+-------------------------*/
+.hero{
+    &::before {
+      @include bg-before;
+    }
+    .hero-content {
+        p {
+            max-width: 500px;
+        }
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-35%);
+        z-index: 2;
+        right: 0;
+    }
+    .hero-item1{
+        background: url("http://placehold.it/1920x1080") no-repeat center;
+        background-size: cover;
+        &:before{
+            @include bg-before;
+        }
+    }
+    .hero-item2{
+        background: url("http://placehold.it/1920x1080") no-repeat center;
+        background-size: cover;
+        &:before{
+            @include bg-before;
+        }
+    }
+    .hero-icon{
+        text-align: center;
+        position: absolute;
+        bottom: 40px;
+        z-index: 1;
+        left: calc(50% - 8px);
+        animation: bounce 2s infinite;
+    }
+}

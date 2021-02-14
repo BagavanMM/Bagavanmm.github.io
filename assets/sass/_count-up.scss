@@ -1,0 +1,11 @@
+@import "variables";
+@import "mixin";
+/*-------------------------
+         Count up
+-------------------------*/
+.count-number{
+  font-size: $f-s-r;
+}
+.count-item:not(:last-child){
+  border-right: 1px dashed $cacaca;
+}
