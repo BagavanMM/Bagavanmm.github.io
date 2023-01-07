@@ -52,7 +52,7 @@ export default function Home({ setSelectedIndex }: Props) {
               justifyContent={{ xs: "center", sm: "flex-start" }}
             >
               <Typography variant="subtitle1" gutterBottom>
-                16 y/o aCtIvAtOr aT tHe KnOwLeDgE sOcIeTy
+                An ML Dev based in Toronto
                 {/* Better an{' '}
                 <Box fontWeight="fontWeightMedium" display="inline">
                   oops
